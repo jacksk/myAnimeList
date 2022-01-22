@@ -39,48 +39,6 @@ function updateDom(data){
                 </div>
             `
         })
-
-    /*const animeByCategories = data.results
-        .reduce((acc, anime)=>{
-
-            const {type} = anime;
-            if(acc[type] === undefined) acc[type] = [];
-            acc[type].push(anime);
-            return acc;
-
-        }, {});
-
-        searchResults.innerHTML = Object.keys(animeByCategories).map(key=>{
-
-            const animesHTML = animeByCategories[key]
-            .sort((a,b)=>a.episodes-b.episodes)
-            .map(anime=>{
-                return `
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="${anime.image_url}">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title">${anime.title}</span>
-                            <p>${anime.synopsis}</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="${anime.url}">Find out more</a>
-                        </div>
-                    </div>
-                `
-            }).join("");
-
-
-            return `
-                <section>
-                    <h3>${key.toUpperCase()}</h3>
-                    <div class="kemicofa-row">${animesHTML}</div>
-                </section>
-            `
-        }).join("");
-
-    */
 }
 
 function pageLoaded(){
