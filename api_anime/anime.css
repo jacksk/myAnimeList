@@ -1,0 +1,21 @@
+.card {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card > .card-content {
+    flex-grow: 1;
+}
+
+.card > .card-image {
+    flex-basis: 25rem;
+    flex-shrink: 0;
+    overflow-y: hidden;
+    background-color: grey;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
